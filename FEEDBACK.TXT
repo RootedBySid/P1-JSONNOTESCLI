@@ -1,0 +1,3 @@
+1) Avoid Recursive Menu Calls, use while true: as recursive calls have a limit and program can crash 
+2) Deletion Is Not Persisted, save the changes to the json file otherwise the deletion is not registered
+3) Function directly modifies a global variable, instead , pass arguments for better flow and debugging 
