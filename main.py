@@ -32,6 +32,8 @@ def view_note():
     for key , value in notes.items():
         print(f"{key}: {value}")
     main()
+    
+    
 def delete_note():
     try:
         index=int(input("Enter note's index to be deleted : "))
@@ -40,6 +42,8 @@ def delete_note():
         delete_note()
     else:
         del notes[f"{index}"]
+        with open("notes.json",'w') as file:
+            json.dump(notes,file)
     main()
         
         
